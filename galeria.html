@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Galería Multiformato</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+  /* Estilos para la galería */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body class="alert alert-info">
+  <h3 class="text-info">Creado por: Mireya Martinez</h3>
+<div class="gallery">
+  <div class="item">
+    <img src="img/redox.png" alt="Imagen" width="500" height="400">
+    <h4><b>Beneficios</b></h4>
+    <b><p>Las <em>reacciones de óxido-reducción</em> son importantes porque proporcionan energía, permiten la vida y sirve para muchas aplicaciones como la obtención de metales, control de la calidad del agua, refinación del petróleo, entre otras.</p>
+    </b></div>
+  <div class="item">
+    <video controls>
+      <source src="img/redox.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <h3>Riesgos</h3>
+    <p><b><em>Los efectos de los productos químicos en la salud están vinculados con otras cuestiones prioritarias, como la desigualdad y la vulnerabilidad.
+      La contaminación por productos químicos puede tener consecuencias graves para el medio ambiente y la salud humana.
+      </em></b></p>
+  </div>
+  <div class="item">
+    <audio controls>
+      <source src="img/redox.mp3" type="audio/mpeg" >
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+    <h3>Costros ambientales</h3>
+    <p><b><em>
+      <ul> Emisión de Gases de Efecto Invernadero: Algunos procesos redox liberan gases que contribuyen al cambio climático.</ul>
+     <li> Contaminación del Agua: La producción industrial basada en reacciones redox puede contaminar cuerpos de agua con sustancias químicas peligrosas.</li>
+      <li>Generación de Residuos Peligrosos: Algunos productos derivados de reacciones redox pueden generar residuos tóxicos.</li></p></em></b>
+  </div>
+</div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>
